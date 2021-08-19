@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/j-obs",
+      "handler": "j-ob.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/j-obs/count",
+      "handler": "j-ob.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/j-obs/:id",
+      "handler": "j-ob.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/j-obs",
+      "handler": "j-ob.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/j-obs/:id",
+      "handler": "j-ob.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/j-obs/:id",
+      "handler": "j-ob.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "j_obs",
+  "info": {
+    "name": "Job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "company": {
+      "model": "company",
+      "via": "jobs"
+    }
+  }
+}
